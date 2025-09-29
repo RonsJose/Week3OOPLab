@@ -17,4 +17,9 @@ public class Calculator {
     {
         return FirstNum * SecondNum;
     }
+    //Method to subtract two numbers
+    public  int div(int FirstNum, int SecondNum)
+    {
+        return FirstNum / SecondNum;
+    }
 }
