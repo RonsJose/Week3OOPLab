@@ -12,4 +12,9 @@ public class Calculator {
     {
         return FirstNum - SecondNum;
     }
+    //Method to subtract two numbers
+    public int mul(int FirstNum, int SecondNum)
+    {
+        return FirstNum * SecondNum;
+    }
 }
