@@ -28,7 +28,15 @@ public class MainApp {
                 yield calc.mul(FirstNumber,SecondNumber);
             }
             case 4 ->{
-                yield calc.div(FirstNumber,SecondNumber);
+                if(SecondNumber==0)
+                {
+                    System.out.println("Can't divide by zero");
+                    yield 0;
+                }
+                else
+                {
+                    yield calc.div(FirstNumber,SecondNumber);
+                }
             }
             default -> {
               System.out.println("Invalid input");
