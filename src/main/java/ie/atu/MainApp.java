@@ -12,7 +12,7 @@ public class MainApp {
         System.out.println("Enter 2nd number: ");
         int SecondNumber=scan.nextInt();
 
-       System.out.println("Please pick one of the options:\n\n1. Addition\n2. Subtraction\n3.Multiplication\n");
+       System.out.println("Please pick one of the options:\n\n1. Addition\n2. Subtraction\n3.Multiplication\n4.Division");
        int operation=scan.nextInt();
         Calculator calc=new Calculator();
 
@@ -26,6 +26,9 @@ public class MainApp {
             }
             case 3->{
                 yield calc.mul(FirstNumber,SecondNumber);
+            }
+            case 4 ->{
+                yield calc.div(FirstNumber,SecondNumber);
             }
             default -> {
               System.out.println("Invalid input");
